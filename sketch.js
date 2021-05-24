@@ -84,7 +84,7 @@ function draw(){
     //Showing the score.
     textSize(20);
     fill("green");
-    text("Score : " + score, 200, 50);
+    text("Score : " + score, 30,50);
   
     if(gameState === PLAY){
       //Making trex jump when pressing space or touching the screen.
@@ -134,11 +134,8 @@ function draw(){
       //Making restart visible.
       restart.visible = true;
       
-      //Showing game over and instructions to restart.
-      textSize(20);
-      fill("red");
-      text("GAME OVER", 200, 100);
-      text("Click on the restart button", 150, 130);
+     
+      
       
       //Resetting the game.
       if(mousePressedOver(restart) || touches.length > 0){
